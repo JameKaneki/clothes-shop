@@ -1,0 +1,27 @@
+.sibar {
+	width: 100%;
+	border-radius: 12px;
+	padding: 10%;
+	background-color: white;
+}
+.category {
+	& h2 {
+		font-size: 1.6rem;
+		font-weight: 700;
+	}
+}
+.inputWrap {
+	display: flex;
+	margin: 8px 0;
+	& input {
+		display: block;
+		margin-right: 12px;
+		transform: scale(1.5);
+		cursor: pointer;
+	}
+
+	& span {
+		font-size: 1.2rem;
+		font-weight: 500;
+	}
+}

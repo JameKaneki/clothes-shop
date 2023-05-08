@@ -1,0 +1,23 @@
+.cartWrap {
+	display: flex;
+	padding: 50px 100px;
+}
+.content {
+	width: 60%;
+}
+.sibar {
+	width: 40%;
+	margin-left: 50px;
+}
+.componentWrap {
+	padding: 2rem 0;
+	background-color: #fff;
+	border-radius: 0.5rem;
+	margin-bottom: 1.4rem;
+
+	& h2 {
+		font-size: 1.6rem;
+		font-weight: 700;
+		margin-bottom: 1.4rempx;
+	}
+}

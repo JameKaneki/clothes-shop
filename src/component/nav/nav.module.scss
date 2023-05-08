@@ -1,0 +1,38 @@
+.navWrap {
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	background-color: #999;
+}
+.navSelect {
+	padding: 4px 30px;
+	font-size: 1.1rem;
+	font-weight: 500;
+	& a {
+		color: white;
+	}
+	&:hover ul {
+		display: block;
+	}
+}
+.navSlide {
+	display: none;
+	padding: 12px;
+	position: absolute;
+	background-color: #fff;
+	width: 100%;
+	left: 0;
+
+	& h3 {
+		font-size: 1.4rem;
+		font-weight: 700;
+	}
+
+	& li a {
+		font-size: 1.3rem;
+		font-weight: 500;
+		margin: 12px 0;
+		color: black;
+	}
+}

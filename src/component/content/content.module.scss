@@ -1,0 +1,36 @@
+.content {
+}
+
+.productList {
+	display: flex;
+	flex-wrap: wrap;
+}
+.product {
+	background-color: #fff;
+	width: calc(25% - 24px);
+	margin: 12px;
+	padding: 12px 20px;
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.productImg {
+	width: 100%;
+	margin: auto;
+	display: block;
+	overflow: hidden;
+	max-height: 70%;
+}
+.productInfo {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 12px;
+}
+.productName {
+	width: 50%;
+	font-weight: bold;
+}
+.productPrice {
+	color: #269de0;
+}

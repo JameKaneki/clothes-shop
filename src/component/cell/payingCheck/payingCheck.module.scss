@@ -1,0 +1,63 @@
+.redbutton {
+	background-color: #e42c14;
+	color: #fff;
+	border-radius: 5%;
+}
+.PayingCheck {
+	border-radius: 12px;
+	padding: 20xp 0;
+
+	& > div {
+		padding: 0 20px;
+	}
+}
+
+// code Paying
+.codePaying {
+	display: flex;
+	justify-content: space-between;
+
+	& input {
+		width: 70%;
+		outline: none;
+		border: 1px solid rgba(165, 165, 165, 0.5);
+		border-radius: 12px;
+		padding: 8px 12px;
+	}
+	& button {
+		padding: 4px 20px;
+		border-radius: 8px;
+		font-weight: 700;
+	}
+}
+
+// total table Wrap
+.tableWrap {
+	display: block;
+	width: 100%;
+}
+.table {
+	display: flex;
+	justify-content: space-between;
+	text-align: start;
+}
+// total
+.total {
+	border: solid #999;
+	border-width: 1px 0 1px 0;
+	margin: 20px 0;
+	& h3 {
+		margin: 10px 0;
+	}
+}
+
+.payButton {
+	margin: 10px auto;
+	& button {
+		display: flex;
+		margin: 0px auto;
+		font-weight: 700;
+		padding: 4px 50px;
+		border-radius: 8px;
+	}
+}

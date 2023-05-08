@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+	font-size: 2.2rem;
+	font-weight: 900;
+}
+h2 {
+	font-size: 2rem;
+	font-weight: 700;
+}
+h3 {
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+h4 {
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+h5 {
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+p {
+	font-size: 1rem;
+	font-weight: 400;
+	color: #999;
+}

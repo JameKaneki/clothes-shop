@@ -1,0 +1,82 @@
+.active {
+	background: #e42c14 !important;
+	color: white !important;
+}
+
+.product {
+	width: 100%;
+	display: flex;
+	padding: 2%;
+	height: 500px;
+}
+.productImg {
+	// margin: 0 50px;
+	background-color: #fff;
+	width: 50%;
+	margin-right: 5%;
+	& img {
+		height: 200px;
+		max-width: 50%;
+		margin: 5% auto;
+	}
+}
+
+.productInfo {
+	width: 50%;
+	margin: 20px 0;
+	padding-right: 20%;
+	& h2 {
+		font-size: 1.6rem;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+
+	& h3 {
+		font-size: 1.4rem;
+		font-weight: 700;
+		margin: 20px 0;
+	}
+	& h4 {
+		font-size: 1.3rem;
+		font-weight: 500;
+		margin-top: 10px;
+	}
+}
+
+.productSize {
+	display: flex;
+	margin: 0;
+
+	& button {
+		font-weight: 500;
+		padding: 4px 8px;
+		margin-right: 12px;
+		background-color: #fff;
+		border-radius: 5px;
+		box-shadow: 1px 1px 1px 1px #fff;
+	}
+}
+.redButton {
+	background-color: #e42c14;
+	color: white;
+	padding: 4px 20px;
+	margin-right: 10px;
+	border-radius: 10px;
+	font-weight: 500;
+}
+.amount {
+	display: flex;
+
+	& button {
+		font-weight: 500;
+		padding: 4px 8px;
+		margin-right: 12px;
+		background-color: #fff;
+		border-radius: 5px;
+		box-shadow: 1px 1px 1px 1px #fff;
+	}
+	& p {
+		margin: 0 8 px;
+		padding: 2px 12px;
+	}
+}

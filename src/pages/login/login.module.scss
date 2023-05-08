@@ -1,0 +1,61 @@
+.colorBlue {
+	color: #0e8bf1;
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+.fontBold {
+	font-weight: 500;
+	margin: 0 12px;
+}
+.loginWrap {
+	display: flex;
+	max-height: 900px;
+	overflow: hidden;
+}
+.banner {
+	width: 70%;
+}
+.from {
+	width: 30%;
+	margin: 100px 40px;
+	& h1 {
+		font-size: 2.6rem;
+		font-weight: 700;
+		text-align: center;
+		margin-bottom: 100px;
+	}
+
+	& input {
+		background-color: rgba(196, 196, 196, 0.1);
+		padding: 16px;
+		border-radius: 4px;
+		font-size: 1.1rem;
+		margin: 20px 0;
+		width: 100%;
+		font-weight: 300;
+		outline: none;
+	}
+}
+.loginBtn {
+	font-weight: 500;
+	font-size: 1.2rem;
+	color: white;
+	background-color: #e42c14;
+	width: 100%;
+	padding: 12px 16px;
+	margin: 20px 0;
+	border-radius: 8px;
+}
+.forgotPassWord {
+	text-align: center;
+}
+.loginWith {
+	margin: 12px;
+
+	& p {
+		color: #666;
+	}
+	& button {
+		margin: 20px 12px;
+	}
+}

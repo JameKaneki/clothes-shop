@@ -1,0 +1,68 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 4px 12px;
+	box-shadow: 0px 2px 2px 0px #999;
+}
+.search {
+	border: 1px solid #999;
+	margin: auto 0px;
+	padding: 12px;
+	border-radius: 30px;
+
+	& input {
+		padding: 4px 20px;
+		outline: none;
+		font-size: 1rem;
+	}
+	& button {
+		padding: 0 12px;
+		font-size: 1.1rem;
+	}
+	& button + button {
+		border-left: 1px solid #999;
+	}
+}
+.userLocation {
+	display: flex;
+	margin: auto 0;
+	font-size: 1.8rem;
+	& button {
+		margin: 0 20px;
+	}
+}
+.userSlide {
+	position: relative;
+	text-align: start;
+
+	&:hover > ul {
+		display: block;
+	}
+}
+.Slide {
+	display: none;
+	position: absolute;
+	width: 200px;
+	background-color: white;
+	border: 1px solid #999;
+	z-index: 2;
+	right: 0;
+
+	& > li > a > svg {
+		// display: block;
+		margin: 4px 10px;
+		font-size: 1.2rem;
+	}
+
+	& > li:hover {
+		color: #ff1717;
+		opacity: 0.8;
+	}
+}
+.slideIcon {
+	background-color: #e42c14;
+	color: white;
+	border: 1px solid white;
+	padding: 6px 10px;
+	font-size: 1.3rem;
+}

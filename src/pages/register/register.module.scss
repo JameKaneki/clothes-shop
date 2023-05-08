@@ -1,0 +1,60 @@
+.colorBlue {
+	color: #0e8bf1;
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+.fontBold {
+	font-weight: 500;
+	margin: 0 12px;
+}
+.registerWrap {
+	display: flex;
+	max-height: 900px;
+	overflow: hidden;
+}
+.banner {
+	width: 70%;
+}
+.from {
+	width: 30%;
+	margin: 50px 40px;
+	& h1 {
+		font-size: 2.6rem;
+		font-weight: 700;
+		text-align: center;
+		margin-bottom: 70px;
+	}
+
+	& input {
+		background-color: rgba(196, 196, 196, 0.1);
+		padding: 16px;
+		border-radius: 4px;
+		font-size: 1.1rem;
+		margin: 8px 0;
+		width: 100%;
+		font-weight: 300;
+		outline: none;
+	}
+}
+.addBtn {
+	width: 100%;
+	text-align: center;
+	background-color: #e42c14;
+	color: white;
+	font-size: 1.3rem;
+	font-weight: 500;
+	padding: 12px;
+	border-radius: 8px;
+	margin-top: 20px;
+}
+.registerWith {
+	margin: 20px 0px;
+	text-align: center;
+	& p {
+		color: #666;
+		margin: 12px;
+	}
+	& button {
+		margin: 12px;
+	}
+}
