@@ -26,7 +26,8 @@
 	}
 
 	& input {
-		background-color: rgba(196, 196, 196, 0.1);
+		// background-color: rgba(196, 196, 196, 0.1);
+		background-color: #fff;
 		padding: 16px;
 		border-radius: 4px;
 		font-size: 1.1rem;
@@ -37,10 +38,11 @@
 	}
 }
 .addBtn {
+	display: block;
 	width: 100%;
 	text-align: center;
 	background-color: #e42c14;
-	color: white;
+	// color: white;
 	font-size: 1.3rem;
 	font-weight: 500;
 	padding: 12px;

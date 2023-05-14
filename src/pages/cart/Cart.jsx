@@ -9,19 +9,19 @@ import NoProductInCart from "../../component/cell/noProductInCart/noProductInCar
 import CartProductWrap from "../../component/cell/cartProductWrap/cartProductWrap";
 
 function Cart() {
-	const [cartState, cartDispatch] = useCartData();
+	const cartContext = useCartData();
 	return (
 		<div className={clsx(style.cartWrap)}>
 			<div className={clsx(style.componentWrap, style.content)}>
-				{cartState.length !== 0 ? (
-					<CartProductWrap prop={cartState} />
+				{cartContext[0].length !== 0 ? (
+					<CartProductWrap prop={cartContext[0]} />
 				) : (
 					<NoProductInCart />
 				)}
 			</div>
 			<div className={clsx(style.sibar)}>
 				<div className={clsx(style.componentWrap)}>
-					<PayingCheck prop={cartState} />
+					<PayingCheck prop={cartContext[0]} />
 				</div>
 				<div className={clsx(style.componentWrap)}>
 					<ShippingInfo />

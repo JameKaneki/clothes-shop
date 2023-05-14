@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import style from "./cartProduct.module.scss";
-import {} from "@fortawesome/free-solid-svg-icons";
 
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -8,29 +7,28 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDeleteLeft } from "@fortawesome/free-solid-svg-icons";
 import { useCartData } from "../../../Context/Contexthooks";
 
-const prop = {
-	idProduct: 2,
-	nameProduct: "Jujutsukaiden T shirt",
-	description:
-		"Basic T-shirt for your daily activity.simple, comfortable material, and ecofriendly",
-	price: 50000,
-	category: "MEN",
-	categoryItem: "T_SHIRT",
-	image: "https://res.cloudinary.com/dwohqjquz/image/upload/v1682014947/clothes-shop/short_vintage_T_shirt_jozi07.jpg",
-	quantity: 50000,
-	sizeList: ["S", "M", "L", "XL"],
-	amount: 2,
-	size: "XL",
-	color: "",
-};
+// const prop = {
+// 	idProduct: 2,
+// 	nameProduct: "Jujutsukaiden T shirt",
+// 	description:
+// 		"Basic T-shirt for your daily activity.simple, comfortable material, and ecofriendly",
+// 	price: 50000,
+// 	category: "MEN",
+// 	categoryItem: "T_SHIRT",
+// 	image: "https://res.cloudinary.com/dwohqjquz/image/upload/v1682014947/clothes-shop/short_vintage_T_shirt_jozi07.jpg",
+// 	quantity: 50000,
+// 	sizeList: ["S", "M", "L", "XL"],
+// 	amount: 2,
+// 	size: "XL",
+// 	color: "",
+// };
 
 function CartProduct({ prop }) {
-	const [cartState, dispatch] = useCartData();
+	const cartContext = useCartData();
 	const [amountState, setAmount] = useState(prop.amount);
 	const [sizeState, setSize] = useState(prop.size);
-
 	useEffect(() => {
-		dispatch({
+		cartContext[1]({
 			type: "change_amount",
 			payload: {
 				id: prop.idProduct,
@@ -39,7 +37,7 @@ function CartProduct({ prop }) {
 		});
 	}, [amountState]);
 	useEffect(() => {
-		dispatch({
+		cartContext[1]({
 			type: "change_size",
 			payload: {
 				id: prop.idProduct,
@@ -49,7 +47,7 @@ function CartProduct({ prop }) {
 	}, [sizeState]);
 
 	const removeProduct = () => {
-		dispatch({
+		cartContext[1]({
 			type: "remove_product",
 			payload: {
 				id: prop.idProduct,

@@ -1,5 +1,5 @@
 import CartProduct from "../cartProduct/cartProduct";
-import { useState } from "react";
+
 
 function CartProductWrap({ prop }) {
 	return (

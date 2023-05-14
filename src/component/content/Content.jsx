@@ -44,7 +44,6 @@ function Content() {
 			<div className={clsx(style.productList)}>
 				{pdList.map((product, index) => {
 					const url = "/Product/id=" + product.idProduct;
-
 					return (
 						<Link
 							to={url}

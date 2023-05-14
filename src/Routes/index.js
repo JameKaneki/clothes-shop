@@ -30,6 +30,25 @@ const publicRoutes = [
 	},
 ];
 
-const privateRoutes = [];
+const privateRoutes = [
+	{
+		path: "/admin",
+	},
+	{
+		path: "/admin/ProductsManegement"
+	},
+	{
+		patc: "/admin/ProductsManegement/add"
+	},
+	{
+		patc: "/admin/ProductsManegement/update"
+	},
+	{
+		patc: "/admin/ProductsManegement/delete"
+	},
+	{
+		path: "/admin/UsersManegement"
+	}
+];
 
 export { publicRoutes, privateRoutes };

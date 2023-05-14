@@ -6,8 +6,6 @@ import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-import TheSameProduct from "../../component/theSameProduct/TheSameProduct";
-
 // a custom hooks
 import { useCartData } from "../../Context/Contexthooks";
 
@@ -31,7 +29,8 @@ function Product() {
 	// useState , useEffect to get product INfo
 	const location = useLocation();
 	const [productInfo, setProductInfo] = useState(productInit);
-	const [cartState, cartDispatch] = useCartData();
+
+	const cartContext = useCartData();
 
 	// get id from location and call api to get product info
 	const { id } = location.state;
@@ -48,11 +47,11 @@ function Product() {
 					}
 				});
 			});
-	}, []);
+	}, [id]);
 
 	// dispatch  add
 	const addToCart = () => {
-		cartDispatch({
+		cartContext[1]({
 			type: "add_Product",
 			payload: {
 				...productInfo,
@@ -118,7 +117,6 @@ function Product() {
 					</div>
 				</div>
 			</div>
-			<TheSameProduct />
 		</div>
 	);
 }
